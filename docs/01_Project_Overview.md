@@ -2,15 +2,15 @@
 
 ## Project Title
 
-TalentPulse AI: Career Intelligence Platform for Data Professionals
+TalentPulse AI: Data Job Market Intelligence Platform
 
 ---
 
 ## Project Description
 
-TalentPulse AI is an end-to-end Data Analytics project that analyzes the Indian Data & AI job market using multiple public datasets. The platform provides insights into hiring trends, in-demand skills, salary patterns, company hiring activity, and geographic opportunities to help students and job seekers make data-driven career decisions.
+TalentPulse AI is an end-to-end Data Analytics project that analyzes the Indian job market for Data Analyst, Business Analyst, BI Analyst, Data Engineer, and Data Scientist roles using multiple public datasets.
 
-The project demonstrates the complete analytics lifecycle, including data collection, ETL, data warehousing, SQL analytics, Python-based analysis, and interactive Power BI dashboards.
+The project demonstrates the complete analytics lifecycle, including data collection, ETL, data warehousing, SQL analytics, Python-based analysis, and interactive Power BI dashboards that provide actionable business insights for students and job seekers.
 
 ---
 
