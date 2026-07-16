@@ -3,3 +3,5 @@
 2026-07-15 23:14:36,365 | INFO | extract | Successfully fetched job postings.
 2026-07-15 23:14:36,379 | INFO | extract | Raw data saved to data\raw\jobs_20260715_231436.json
 2026-07-15 23:14:36,379 | INFO | extract | Extraction completed successfully.
+2026-07-16 21:37:25,956 | INFO | transform | Loading raw data from data\raw\jobs_20260715_231436.json
+2026-07-16 21:37:26,001 | INFO | transform | Processed data saved to data\processed\jobs_clean.csv
