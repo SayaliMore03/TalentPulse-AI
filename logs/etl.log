@@ -5,3 +5,13 @@
 2026-07-15 23:14:36,379 | INFO | extract | Extraction completed successfully.
 2026-07-16 21:37:25,956 | INFO | transform | Loading raw data from data\raw\jobs_20260715_231436.json
 2026-07-16 21:37:26,001 | INFO | transform | Processed data saved to data\processed\jobs_clean.csv
+2026-08-02 21:54:49,318 | INFO | load | Connecting to MySQL database...
+2026-08-02 21:54:49,599 | INFO | load | Connected to MySQL successfully.
+2026-08-02 21:54:49,600 | INFO | load | Reading processed data from data\processed\jobs_clean.csv
+2026-08-02 21:54:49,700 | INFO | load | Inserted 18 companies.
+2026-08-02 21:54:49,701 | INFO | load | Database connection closed.
+2026-08-02 21:55:57,124 | INFO | load | Connecting to MySQL database...
+2026-08-02 21:55:57,316 | INFO | load | Connected to MySQL successfully.
+2026-08-02 21:55:57,316 | INFO | load | Reading processed data from data\processed\jobs_clean.csv
+2026-08-02 21:55:57,350 | INFO | load | Inserted 18 companies.
+2026-08-02 21:55:57,350 | INFO | load | Database connection closed.

@@ -17,6 +17,13 @@ if not ADZUNA_APP_ID or not ADZUNA_API_KEY:
 BASE_URL = "https://api.adzuna.com/v1/api/jobs"
 COUNTRY = "in"  # India
 
+# MySQL Configuration
+MYSQL_HOST = os.getenv("MYSQL_HOST")
+MYSQL_PORT = int(os.getenv("MYSQL_PORT", 3306))
+MYSQL_DATABASE = os.getenv("MYSQL_DATABASE")
+MYSQL_USER = os.getenv("MYSQL_USER")
+MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD")
+
 # Search Defaults
 DEFAULT_SEARCH_KEYWORD = "Data Analyst"  # human-readable default
 RESULTS_PER_PAGE = 20
