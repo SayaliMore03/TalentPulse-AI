@@ -15,3 +15,14 @@
 2026-08-02 21:55:57,316 | INFO | load | Reading processed data from data\processed\jobs_clean.csv
 2026-08-02 21:55:57,350 | INFO | load | Inserted 18 companies.
 2026-08-02 21:55:57,350 | INFO | load | Database connection closed.
+2026-08-02 23:04:42,678 | INFO | load | Connecting to MySQL database...
+2026-08-02 23:04:42,941 | INFO | load | Connected to MySQL successfully.
+2026-08-02 23:04:42,941 | INFO | company_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-08-02 23:04:42,969 | INFO | company_loader | Inserted 0 new companies.
+2026-08-02 23:04:42,970 | INFO | location_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-08-02 23:04:42,999 | INFO | location_loader | Inserted 10 new locations.
+2026-08-02 23:04:43,000 | INFO | category_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-08-02 23:04:43,015 | INFO | category_loader | Inserted 4 new categories.
+2026-08-02 23:04:43,015 | INFO | date_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-08-02 23:04:43,072 | INFO | date_loader | Inserted 14 new dates.
+2026-08-02 23:04:43,072 | INFO | load | Database connection closed.

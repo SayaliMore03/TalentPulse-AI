@@ -9,6 +9,10 @@ from etl.config import (
 )
 
 from etl.loaders.company_loader import load_companies
+from etl.loaders.location_loader import load_locations
+from etl.loaders.category_loader import load_categories
+from etl.loaders.date_loader import load_dates
+
 from etl.utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -34,10 +38,12 @@ def connect_database():
 
 
 def main():
-
     connection = connect_database()
 
     load_companies(connection)
+    load_locations(connection)
+    load_categories(connection)
+    load_dates(connection)
 
     connection.close()
 
