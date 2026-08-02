@@ -1,4 +1,3 @@
-import pandas as pd
 import mysql.connector
 
 from etl.config import (
@@ -7,8 +6,9 @@ from etl.config import (
     MYSQL_DATABASE,
     MYSQL_USER,
     MYSQL_PASSWORD,
-    PROCESSED_DATA_DIR,
 )
+
+from etl.loaders.company_loader import load_companies
 from etl.utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -31,38 +31,6 @@ def connect_database():
     logger.info("Connected to MySQL successfully.")
 
     return connection
-
-
-def load_companies(connection):
-    """
-    Load unique companies into dim_company.
-    """
-    file_path = PROCESSED_DATA_DIR / "jobs_clean.csv"
-
-    logger.info(f"Reading processed data from {file_path}")
-
-    df = pd.read_csv(file_path)
-
-    companies = (
-        df["company"]
-        .dropna()
-        .drop_duplicates()
-        .sort_values()
-    )
-
-    cursor = connection.cursor()
-
-    insert_query = """
-    INSERT IGNORE INTO dim_company (company_name)
-    VALUES (%s)
-    """
-
-    for company in companies:
-        cursor.execute(insert_query, (company,))
-
-    connection.commit()
-
-    logger.info(f"Inserted {len(companies)} companies.")
 
 
 def main():
