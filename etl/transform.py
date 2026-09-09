@@ -84,7 +84,9 @@ def save_processed_data(df):
 
     df.to_csv(output_path, index=False)
 
-    logger.info(f"Processed data saved to {output_path}")
+    logger.info(
+        f"Processed data saved to {output_path}"
+    )
 
     return output_path
 
@@ -97,7 +99,9 @@ def main():
 
     df = transform_jobs(data)
 
-    save_processed_data(df)
+    processed_file = save_processed_data(df)
+
+    return processed_file
 
 
 if __name__ == "__main__":

@@ -31,6 +31,56 @@ def build_request_params() -> dict:
 
 def fetch_jobs(params: dict) -> dict:
     """
+    Fetch job postings from the Adzuna API with retry logic.
+    """
+    url = f"{BASE_URL}/{COUNTRY}/search/1"
+
+    max_retries = 3
+
+    for attempt in range(1, max_retries + 1):
+
+        logger.info(
+            f"Sending request to Adzuna API "
+            f"(attempt {attempt}/{max_retries})..."
+        )
+
+        try:
+            response = requests.get(
+                url,
+                params=params,
+                timeout=30
+            )
+
+            response.raise_for_status()
+
+            logger.info(
+                "Successfully fetched job postings."
+            )
+
+            return response.json()
+
+        except requests.exceptions.RequestException as e:
+
+            logger.warning(
+                f"API request failed on attempt "
+                f"{attempt}: {e}"
+            )
+
+            if attempt == max_retries:
+                logger.error(
+                    "API request failed after all retries."
+                )
+                raise
+
+            wait_time = 2 ** attempt
+
+            logger.info(
+                f"Retrying in {wait_time} seconds..."
+            )
+
+            import time
+            time.sleep(wait_time)
+    """
     Fetch job postings from the Adzuna API.
     """
     url = f"{BASE_URL}/{COUNTRY}/search/1"
@@ -38,7 +88,12 @@ def fetch_jobs(params: dict) -> dict:
     logger.info("Sending request to Adzuna API...")
 
     try:
-        response = requests.get(url, params=params, timeout=30)
+        response = requests.get(
+            url,
+            params=params,
+            timeout=30
+        )
+
         response.raise_for_status()
 
         logger.info("Successfully fetched job postings.")
@@ -48,6 +103,7 @@ def fetch_jobs(params: dict) -> dict:
     except requests.exceptions.RequestException as e:
         logger.error(f"API request failed: {e}")
         raise
+
 
 def save_raw_json(data: dict) -> str:
     """
@@ -72,9 +128,11 @@ def main():
 
     data = fetch_jobs(params)
 
-    save_raw_json(data)
+    raw_file = save_raw_json(data)
 
     logger.info("Extraction completed successfully.")
+
+    return raw_file
 
 
 if __name__ == "__main__":

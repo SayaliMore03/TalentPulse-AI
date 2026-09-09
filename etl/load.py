@@ -38,18 +38,34 @@ def connect_database():
     return connection
 
 
-def main():
+def load_to_database():
+    """
+    Load cleaned data into the MySQL warehouse.
+    """
+
     connection = connect_database()
 
-    load_companies(connection)
-    load_locations(connection)
-    load_categories(connection)
-    load_dates(connection)
-    load_fact_jobs(connection)
+    try:
+        load_companies(connection)
+        load_locations(connection)
+        load_categories(connection)
+        load_dates(connection)
+        load_fact_jobs(connection)
 
-    connection.close()
+    finally:
+        connection.close()
 
-    logger.info("Database connection closed.")
+        logger.info(
+            "Database connection closed."
+        )
+
+
+def main():
+    """
+    Run the database loading stage independently.
+    """
+
+    load_to_database()
 
 
 if __name__ == "__main__":
