@@ -67,3 +67,27 @@
 2026-09-09 12:47:46,517 | INFO | fact_loader | Reading processed data from data\processed\jobs_clean.csv
 2026-09-09 12:47:46,625 | INFO | fact_loader | Inserted 1 new jobs.
 2026-09-09 12:47:46,626 | INFO | load | Database connection closed.
+2026-09-09 13:02:03,761 | INFO | validation | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 13:02:03,770 | INFO | validation | Total records: 20
+2026-09-09 13:02:03,772 | INFO | validation | Missing values by column:
+2026-09-09 13:02:03,773 | INFO | validation | 
+job_id            0
+title             0
+company           1
+location          0
+category          0
+salary_min       14
+salary_max       14
+contract_type    15
+contract_time    10
+created           0
+description       0
+redirect_url      0
+dtype: int64
+2026-09-09 13:02:03,775 | INFO | validation | Duplicate job IDs: 0
+2026-09-09 13:02:03,776 | INFO | validation | Invalid salary ranges: 0
+2026-09-09 13:02:03,776 | INFO | validation | Negative salary_min values: 0
+2026-09-09 13:02:03,777 | INFO | validation | Negative salary_max values: 0
+2026-09-09 13:02:03,784 | INFO | validation | Invalid dates: 0
+2026-09-09 13:02:03,785 | INFO | validation | Future dates: 0
+2026-09-09 13:02:03,786 | INFO | validation | Data validation completed.
