@@ -12,6 +12,7 @@ from etl.loaders.company_loader import load_companies
 from etl.loaders.location_loader import load_locations
 from etl.loaders.category_loader import load_categories
 from etl.loaders.date_loader import load_dates
+from etl.loaders.fact_loader import load_fact_jobs
 
 from etl.utils.logger import get_logger
 
@@ -44,6 +45,7 @@ def main():
     load_locations(connection)
     load_categories(connection)
     load_dates(connection)
+    load_fact_jobs(connection)
 
     connection.close()
 

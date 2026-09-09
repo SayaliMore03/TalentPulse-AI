@@ -26,3 +26,44 @@
 2026-08-02 23:04:43,015 | INFO | date_loader | Reading processed data from data\processed\jobs_clean.csv
 2026-08-02 23:04:43,072 | INFO | date_loader | Inserted 14 new dates.
 2026-08-02 23:04:43,072 | INFO | load | Database connection closed.
+2026-09-09 12:29:21,269 | INFO | load | Connecting to MySQL database...
+2026-09-09 12:29:21,589 | INFO | load | Connected to MySQL successfully.
+2026-09-09 12:29:21,589 | INFO | company_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:29:21,686 | INFO | company_loader | Inserted 0 new companies.
+2026-09-09 12:29:21,687 | INFO | location_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:29:21,701 | INFO | location_loader | Inserted 0 new locations.
+2026-09-09 12:29:21,701 | INFO | category_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:29:21,714 | INFO | category_loader | Inserted 0 new categories.
+2026-09-09 12:29:21,715 | INFO | date_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:29:21,755 | INFO | date_loader | Inserted 0 new dates.
+2026-09-09 12:29:21,756 | INFO | fact_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:29:21,798 | WARNING | fact_loader | Skipping job 4686704238 because a dimension lookup failed.
+2026-09-09 12:29:21,881 | INFO | fact_loader | Inserted 19 new jobs.
+2026-09-09 12:29:21,882 | INFO | load | Database connection closed.
+2026-09-09 12:43:01,874 | INFO | load | Connecting to MySQL database...
+2026-09-09 12:43:02,249 | INFO | load | Connected to MySQL successfully.
+2026-09-09 12:43:02,249 | INFO | company_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:43:02,320 | INFO | company_loader | Inserted 0 new companies.
+2026-09-09 12:43:02,321 | INFO | location_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:43:02,335 | INFO | location_loader | Inserted 0 new locations.
+2026-09-09 12:43:02,335 | INFO | category_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:43:02,345 | INFO | category_loader | Inserted 0 new categories.
+2026-09-09 12:43:02,346 | INFO | date_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:43:02,373 | INFO | date_loader | Inserted 0 new dates.
+2026-09-09 12:43:02,373 | INFO | fact_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:43:02,401 | WARNING | fact_loader | Skipping job 4686704238 | company_found=False | location_found=True | category_found=True | date_found=True
+2026-09-09 12:43:02,469 | INFO | fact_loader | Inserted 0 new jobs.
+2026-09-09 12:43:02,470 | INFO | load | Database connection closed.
+2026-09-09 12:47:46,151 | INFO | load | Connecting to MySQL database...
+2026-09-09 12:47:46,438 | INFO | load | Connected to MySQL successfully.
+2026-09-09 12:47:46,438 | INFO | company_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:47:46,470 | INFO | company_loader | Inserted 0 new companies.
+2026-09-09 12:47:46,472 | INFO | location_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:47:46,485 | INFO | location_loader | Inserted 0 new locations.
+2026-09-09 12:47:46,485 | INFO | category_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:47:46,494 | INFO | category_loader | Inserted 0 new categories.
+2026-09-09 12:47:46,496 | INFO | date_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:47:46,517 | INFO | date_loader | Inserted 0 new dates.
+2026-09-09 12:47:46,517 | INFO | fact_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 12:47:46,625 | INFO | fact_loader | Inserted 1 new jobs.
+2026-09-09 12:47:46,626 | INFO | load | Database connection closed.
