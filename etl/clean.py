@@ -102,8 +102,8 @@ def clean_data(file_path):
     # 7. Handle invalid salary values
     # --------------------------------------------------
 
-    invalid_min = df["salary_min"] < 0
-    invalid_max = df["salary_max"] < 0
+    invalid_min = df["salary_min"] <= 0
+    invalid_max = df["salary_max"] <= 0
 
     invalid_salary_count = (
         invalid_min.fillna(False)

@@ -97,13 +97,22 @@ def validate_data(file_path):
         f"Invalid dates: {invalid_dates}"
     )
 
+    # Compare calendar dates rather than exact timestamps.
+    # Jobs created later today are still valid.
+
+    today = pd.Timestamp.now(tz="UTC").date()
+
     future_dates = (
-        dates > pd.Timestamp.now(tz="UTC")
+        dates.dt.date > today
     ).sum()
 
     logger.info(
         f"Future dates: {future_dates}"
     )
+
+    # --------------------------------------------------
+    # Validation completed
+    # --------------------------------------------------
 
     logger.info(
         "Data validation completed."

@@ -147,3 +147,130 @@ dtype: int64
 2026-09-09 13:32:28,105 | INFO | fact_loader | Inserted 20 new jobs.
 2026-09-09 13:32:28,106 | INFO | load | Database connection closed.
 2026-09-09 13:32:28,107 | INFO | pipeline | TalentPulse AI ETL pipeline completed successfully.
+2026-09-09 15:31:28,557 | INFO | pipeline | Starting TalentPulse AI ETL pipeline...
+2026-09-09 15:31:28,557 | INFO | extract | Starting extraction pipeline...
+2026-09-09 15:31:28,557 | INFO | extract | Sending request to Adzuna API (attempt 1/3)...
+2026-09-09 15:31:31,291 | INFO | extract | Successfully fetched job postings.
+2026-09-09 15:31:31,300 | INFO | extract | Raw data saved to data\raw\jobs_20260909_153131.json
+2026-09-09 15:31:31,300 | INFO | extract | Extraction completed successfully.
+2026-09-09 15:31:31,301 | INFO | transform | Loading raw data from data\raw\jobs_20260909_153131.json
+2026-09-09 15:31:31,356 | INFO | transform | Processed data saved to data\processed\jobs_clean.csv
+2026-09-09 15:31:31,356 | INFO | clean | Reading transformed data from data\processed\jobs_clean.csv
+2026-09-09 15:31:31,424 | INFO | clean | Initial records: 20
+2026-09-09 15:31:31,424 | INFO | clean | Duplicates removed: 0
+2026-09-09 15:31:31,424 | INFO | clean | Invalid salary values cleaned: 0
+2026-09-09 15:31:31,424 | INFO | clean | Invalid salary ranges cleaned: 0
+2026-09-09 15:31:31,424 | INFO | clean | Final records: 20
+2026-09-09 15:31:31,426 | INFO | clean | Cleaned data saved to data\processed\jobs_clean.csv
+2026-09-09 15:31:31,426 | INFO | validation | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:31:31,448 | INFO | validation | Total records: 20
+2026-09-09 15:31:31,450 | INFO | validation | Missing values by column:
+job_id            0
+title             0
+company           0
+location          0
+category          0
+salary_min       20
+salary_max       20
+contract_type    19
+contract_time    11
+created           0
+description       0
+redirect_url      0
+dtype: int64
+2026-09-09 15:31:31,451 | INFO | validation | Duplicate job IDs: 0
+2026-09-09 15:31:31,452 | INFO | validation | Invalid salary ranges: 0
+2026-09-09 15:31:31,453 | INFO | validation | Negative salary_min values: 0
+2026-09-09 15:31:31,453 | INFO | validation | Negative salary_max values: 0
+2026-09-09 15:31:31,457 | INFO | validation | Invalid dates: 0
+2026-09-09 15:31:31,458 | INFO | validation | Future dates: 2
+2026-09-09 15:31:31,458 | INFO | validation | Data validation completed.
+2026-09-09 15:31:31,459 | INFO | load | Connecting to MySQL database...
+2026-09-09 15:31:31,659 | INFO | load | Connected to MySQL successfully.
+2026-09-09 15:31:31,660 | INFO | company_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:31:31,685 | INFO | company_loader | Inserted 2 new companies.
+2026-09-09 15:31:31,686 | INFO | location_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:31:31,703 | INFO | location_loader | Inserted 0 new locations.
+2026-09-09 15:31:31,703 | INFO | category_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:31:31,713 | INFO | category_loader | Inserted 0 new categories.
+2026-09-09 15:31:31,714 | INFO | date_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:31:31,735 | INFO | date_loader | Inserted 1 new dates.
+2026-09-09 15:31:31,736 | INFO | fact_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:31:31,838 | INFO | fact_loader | Inserted 2 new jobs.
+2026-09-09 15:31:31,840 | INFO | load | Database connection closed.
+2026-09-09 15:31:31,841 | INFO | pipeline | TalentPulse AI ETL pipeline completed successfully.
+2026-09-09 15:36:02,553 | INFO | pipeline | Starting TalentPulse AI ETL pipeline...
+2026-09-09 15:36:02,554 | INFO | extract | Starting extraction pipeline...
+2026-09-09 15:36:02,554 | INFO | extract | Sending request to Adzuna API (attempt 1/3)...
+2026-09-09 15:36:04,874 | INFO | extract | Successfully fetched job postings.
+2026-09-09 15:36:04,885 | INFO | extract | Raw data saved to data\raw\jobs_20260909_153604.json
+2026-09-09 15:36:04,885 | INFO | extract | Extraction completed successfully.
+2026-09-09 15:36:04,887 | INFO | transform | Loading raw data from data\raw\jobs_20260909_153604.json
+2026-09-09 15:36:04,919 | INFO | transform | Processed data saved to data\processed\jobs_clean.csv
+2026-09-09 15:36:04,927 | INFO | clean | Reading transformed data from data\processed\jobs_clean.csv
+2026-09-09 15:36:04,989 | INFO | clean | Initial records: 20
+2026-09-09 15:36:04,989 | INFO | clean | Duplicates removed: 0
+2026-09-09 15:36:04,989 | INFO | clean | Invalid salary values cleaned: 0
+2026-09-09 15:36:04,989 | INFO | clean | Invalid salary ranges cleaned: 0
+2026-09-09 15:36:04,990 | INFO | clean | Final records: 20
+2026-09-09 15:36:04,990 | INFO | clean | Cleaned data saved to data\processed\jobs_clean.csv
+2026-09-09 15:36:04,990 | INFO | validation | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:36:05,008 | INFO | validation | Total records: 20
+2026-09-09 15:36:05,008 | INFO | validation | Missing values by column:
+job_id            0
+title             0
+company           0
+location          0
+category          0
+salary_min       20
+salary_max       20
+contract_type    19
+contract_time    11
+created           0
+description       0
+redirect_url      0
+dtype: int64
+2026-09-09 15:36:05,016 | INFO | validation | Duplicate job IDs: 0
+2026-09-09 15:36:05,017 | INFO | validation | Invalid salary ranges: 0
+2026-09-09 15:36:05,017 | INFO | validation | Negative salary_min values: 0
+2026-09-09 15:36:05,017 | INFO | validation | Negative salary_max values: 0
+2026-09-09 15:36:05,020 | INFO | validation | Invalid dates: 0
+2026-09-09 15:36:05,023 | INFO | validation | Future dates: 2
+2026-09-09 15:36:05,023 | INFO | validation | Data validation completed.
+2026-09-09 15:36:05,023 | INFO | load | Connecting to MySQL database...
+2026-09-09 15:36:05,184 | INFO | load | Connected to MySQL successfully.
+2026-09-09 15:36:05,191 | INFO | company_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:36:05,209 | INFO | company_loader | Inserted 0 new companies.
+2026-09-09 15:36:05,210 | INFO | location_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:36:05,221 | INFO | location_loader | Inserted 0 new locations.
+2026-09-09 15:36:05,221 | INFO | category_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:36:05,232 | INFO | category_loader | Inserted 0 new categories.
+2026-09-09 15:36:05,232 | INFO | date_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:36:05,252 | INFO | date_loader | Inserted 0 new dates.
+2026-09-09 15:36:05,253 | INFO | fact_loader | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:36:05,358 | INFO | fact_loader | Inserted 0 new jobs.
+2026-09-09 15:36:05,358 | INFO | load | Database connection closed.
+2026-09-09 15:36:05,358 | INFO | pipeline | TalentPulse AI ETL pipeline completed successfully.
+2026-09-09 15:38:04,362 | INFO | validation | Reading processed data from data\processed\jobs_clean.csv
+2026-09-09 15:38:04,371 | INFO | validation | Total records: 20
+2026-09-09 15:38:04,373 | INFO | validation | Missing values by column:
+job_id            0
+title             0
+company           0
+location          0
+category          0
+salary_min       20
+salary_max       20
+contract_type    19
+contract_time    11
+created           0
+description       0
+redirect_url      0
+dtype: int64
+2026-09-09 15:38:04,374 | INFO | validation | Duplicate job IDs: 0
+2026-09-09 15:38:04,375 | INFO | validation | Invalid salary ranges: 0
+2026-09-09 15:38:04,376 | INFO | validation | Negative salary_min values: 0
+2026-09-09 15:38:04,376 | INFO | validation | Negative salary_max values: 0
+2026-09-09 15:38:04,382 | INFO | validation | Invalid dates: 0
+2026-09-09 15:38:04,386 | INFO | validation | Future dates: 0
+2026-09-09 15:38:04,386 | INFO | validation | Data validation completed.
