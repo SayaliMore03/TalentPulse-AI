@@ -274,3 +274,43 @@ dtype: int64
 2026-09-09 15:38:04,382 | INFO | validation | Invalid dates: 0
 2026-09-09 15:38:04,386 | INFO | validation | Future dates: 0
 2026-09-09 15:38:04,386 | INFO | validation | Data validation completed.
+2026-09-12 21:50:50,320 | INFO | analysis | Starting EDA...
+2026-09-12 21:50:50,321 | INFO | analysis | Loading dataset from data\processed\jobs_clean.csv
+2026-09-12 21:50:50,370 | INFO | analysis | Dataset loaded successfully.
+2026-09-12 21:50:50,450 | INFO | analysis | EDA Step 1 completed successfully.
+2026-09-12 21:53:00,554 | INFO | analysis | Starting EDA...
+2026-09-12 21:53:00,554 | INFO | analysis | Loading dataset from data\processed\jobs_clean.csv
+2026-09-12 21:53:00,554 | INFO | analysis | Dataset loaded successfully.
+2026-09-12 21:53:00,633 | INFO | analysis | EDA Step 2 completed successfully.
+2026-09-12 21:55:21,834 | INFO | analysis | Starting EDA...
+2026-09-12 21:55:21,834 | INFO | analysis | Loading dataset from data\processed\jobs_clean.csv
+2026-09-12 21:55:21,880 | INFO | analysis | Dataset loaded successfully.
+2026-09-12 21:55:21,974 | INFO | analysis | EDA Step 3 completed successfully.
+2026-09-12 21:55:21,974 | INFO | analysis | Starting EDA...
+2026-09-12 21:55:21,974 | INFO | analysis | Loading dataset from data\processed\jobs_clean.csv
+2026-09-12 21:55:21,979 | INFO | analysis | Dataset loaded successfully.
+2026-09-12 21:55:22,024 | INFO | analysis | EDA Step 2 completed successfully.
+2026-09-12 21:58:13,950 | INFO | analysis | Starting EDA...
+2026-09-12 21:58:13,951 | INFO | analysis | Loading dataset from data\processed\jobs_clean.csv
+2026-09-12 21:58:13,995 | INFO | analysis | Dataset loaded successfully.
+2026-09-12 21:58:14,068 | INFO | analysis | EDA Step 3 completed successfully.
+2026-09-12 21:59:24,774 | INFO | analysis | Starting EDA...
+2026-09-12 21:59:24,774 | INFO | analysis | Loading dataset from data\processed\jobs_clean.csv
+2026-09-12 21:59:24,784 | INFO | analysis | Dataset loaded successfully.
+2026-09-12 21:59:24,866 | INFO | analysis | EDA Step 4 completed successfully.
+2026-09-12 22:00:51,635 | INFO | analysis | Starting EDA...
+2026-09-12 22:00:51,635 | INFO | analysis | Loading dataset from data\processed\jobs_clean.csv
+2026-09-12 22:00:51,644 | INFO | analysis | Dataset loaded successfully.
+2026-09-12 22:00:51,874 | INFO | analysis | EDA Step 5 completed successfully.
+2026-09-12 22:02:14,650 | INFO | analysis | Starting EDA...
+2026-09-12 22:02:14,650 | INFO | analysis | Loading dataset from data\processed\jobs_clean.csv
+2026-09-12 22:02:14,662 | INFO | analysis | Dataset loaded successfully.
+2026-09-12 22:02:14,784 | INFO | analysis | EDA Step 6 completed successfully.
+2026-09-12 22:03:39,293 | INFO | analysis | Starting EDA...
+2026-09-12 22:03:39,293 | INFO | analysis | Loading dataset from data\processed\jobs_clean.csv
+2026-09-12 22:03:39,303 | INFO | analysis | Dataset loaded successfully.
+2026-09-12 22:03:39,438 | INFO | analysis | EDA Step 7 completed successfully.
+2026-09-12 22:06:42,093 | INFO | analysis | Starting EDA...
+2026-09-12 22:06:42,093 | INFO | analysis | Loading dataset from data\processed\jobs_clean.csv
+2026-09-12 22:06:42,101 | INFO | analysis | Dataset loaded successfully.
+2026-09-12 22:06:42,248 | INFO | analysis | EDA summary saved successfully.
